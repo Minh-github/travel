@@ -84,7 +84,7 @@ let AllText =[
                 vôi dưới tác động của tạo hóa mang đến hình ảnh lạ mắt, độc đáo.
                 Hành trình du lịch Hạ Long trên vịnh du khách được chiêm ngưỡng nhiều địa danh nổi tiếng trong đó có đảo Soi Soi. Hòn đảo này
                 cách đảo Ti Tốp 700m2 với nhiều cây sim mọc hoang dại. Du khách có thể check in cảnh biển xung quanh và ngắm hoa sim nở. Du khách
-                hãy dừng chân ở làng chài Cửa Vạn để thưởng ngoạn thiên nhiên yên bình, tìm hiểu về cách chèo thuyền, giăng lưới, bắt tôm cá,… <br>
+                hãy dừng chân ở làng chài Cửa Vạn để thưởng ngoạn thiên nhiên yên bình, tìm hiểu về cách chèo thuyền, giăng lưới, bắt tôm cá,…
                 Du lịch trên vịnh Hạ Long bạn có thể dừng khám phá các động, hang trên vịnh tùy theo hành trình đặt ra. Nếu đi xa hơn trên vịnh du 
                 khách có cơ hội tham quan vịnh Bái tử Long, vịnh Lan Hạ,…với thiên nhiên hùng vĩ, giữ trọn nét hoang sơ vốn có.`,
             },

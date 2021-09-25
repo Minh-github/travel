@@ -1,8 +1,10 @@
 const picture = document.querySelectorAll('.place img');
 const places = document.querySelectorAll('.place .text');
 const titles = document.querySelectorAll('.father .title');
+const coloumnMode = document.querySelectorAll('.father .column');
 const columns = document.querySelectorAll('.column .tag');
 const text = document.querySelectorAll('.column .info');
+const darkMode = document.querySelectorAll('.mode');
 
 
 window.addEventListener('load',load());
@@ -28,11 +30,17 @@ function load(){
 
 function myFun(){
     document.querySelector('.block').classList.toggle('active');
-    document.querySelector('.header').classList.toggle('active1');
+    document.querySelector('.block_mb').classList.toggle('active');
     document.querySelector('.moon').classList.toggle('active2');
-    document.querySelector('.footer').classList.toggle('dark4');
-    document.querySelector('.one').classList.toggle('dark1');
-    document.querySelector('.three').classList.toggle('dark2');
+    for (let i = 0; i < darkMode.length; i++) {
+        darkMode[i].classList.toggle('darkMode');
+    }
+    for (let i = 0; i < coloumnMode.length; i++) {
+        coloumnMode[i].classList.toggle('darkMode');
+    }
+    for (let i = 0; i < titles.length; i++) {
+        titles[i].classList.toggle('darkMode');   
+    }
 }
 function myFun4(){
     document.querySelector('.nav_mobile').classList.add('active3');

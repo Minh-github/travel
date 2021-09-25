@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container" id="home">
-        <div class="header"> 
+        <div class="header mode"> 
             <div class="logo">
                 LOGO
             </div>
@@ -41,21 +41,26 @@
             <div class="icon" onclick="myFun4()">
                 <i class="fas fa-bars open"></i>
             </div>
-            <div class="nav_mobile">
+            <div class="nav_mobile mode">
                 <i class="fas fa-times close" onclick="myFun2()"></i>
                 <ul>
                     <div>Home</div>
                     <div>About</div>
                     <div>Contact</div>
+                    <div class="button"onclick="myFun()">
+                        <div class="block_mb">
+
+                        </div>
+                    </div>
                     <div>
                         <input type="text" placeholder="Tìm kiếm">
                     </div>
                 </ul>
             </div>
         </div>
-        <div class="warrper">
+        <div class="warrper mode">
             <div class="content">
-                <div class="one">
+                <div class="one mode">
                     <ul>
                         <a href="#two" class="place">
                             <img src="">
@@ -73,7 +78,7 @@
                     <div class="choise">Travel Now</div>
                 </div>
                 <div class="row two" id="two">
-                    <div class="father">
+                    <div class="father mode">
                     <div class="title"></div>
                     <div class="text">
                         <div class="column">
@@ -100,8 +105,8 @@
                 </div>
                 </div>
                 <div class="row three" id="three">
-                <div class="father">
-                <div class="title" style="color: #434979; text-shadow: none;"></div>
+                <div class="father mode">
+                <div class="title"></div>
                 <div class="text">
                     <div class="column">
                         <div class="tag"></div>
@@ -127,7 +132,7 @@
             </div>
             </div>
                 <div class="row forth" id="forth">
-                <div class="father">    
+                <div class="father mode">    
                 <div class="title"></div>
                 <div class="text">
                     <div class="column">
@@ -150,7 +155,7 @@
             </div>
         </div>
         </div>
-        <div class="footer" id="footer">
+        <div class="footer mode" id="footer">
             <div class="top">
                 <div class="left">
                     <div class="end">

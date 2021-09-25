@@ -37,6 +37,8 @@ body{
     flex-direction: column;
 }
 
+
+
 /* ------------------------------------------------------------header */
 
 .container .header{
@@ -48,10 +50,6 @@ body{
     position: fixed;
     align-items: center;
     transition: all 0.5s linear;
-}
-
-.header.active1{
-    background: black;
 }
 
 .header .logo{
@@ -231,14 +229,6 @@ body{
     box-sizing: border-box;
 }
 
-.one.dark1{
-    background: #292929;
-}
-
-.tow.dark2{
-    background: #292929;
-}
-
 .one{
     min-height: 100vh;
     max-height: 300vh;
@@ -287,7 +277,7 @@ body{
     position: relative;
     top: 30px;
     width: 80%;
-    min-height: 400px;
+    height: 400px;
     transition: .3s;
     object-fit: cover;
     border-radius: 4px;
@@ -339,6 +329,7 @@ body{
     top: 10vh;
     position: relative;
     border-bottom: gray 2px solid;
+    transition: 1s ease-in-out;
 }
 
 .row .father .text{
@@ -351,7 +342,10 @@ body{
     color: black;
     background: none;
 }
-
+.row .father .column.darkMode{
+    background: #333;
+    color: #f2f5f6;
+}
 .row .father .column{
     flex: 1;
     margin: 0 20px;
@@ -359,11 +353,16 @@ body{
     display: flex;
     flex-direction: column;
     background: #fff;
-    border: #333 1px solid;
+    border: #434979 1px solid;
+    transition: 1s ease-in-out;
 }
 
 .three .father{
     background: #f2f5f6;
+}
+
+.three .father .title{
+    color: #434979;
 }
 
 .column .tag{
@@ -382,10 +381,6 @@ body{
     font-family: sans-serif;
 }
 
-.three.dark2{
-    background: #333;
-}
-
 .three{
     transition: .3s ease-in-out;
     background: #f2f5f6;
@@ -397,6 +392,11 @@ body{
 
 .forth{
     background: #434979;
+
+}
+
+.forth .father{
+    background: inherit;
 }
 
 .title{
@@ -414,10 +414,6 @@ body{
 }
 
 /* --------------------------------------------------------------------footer */
-
-.footer.dark4{
-    background: black;
-}
 
 .footer{
     position: absolute;
@@ -584,7 +580,7 @@ body{
     display: flex;
     flex-direction: row;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav_mobile i{
@@ -593,6 +589,7 @@ body{
     right: 20px;
     font-size: 30px;
     cursor: pointer;
+    background: inherit;
 }
 
 .nav_mobile.active3{
@@ -601,6 +598,7 @@ body{
 
 .nav_mobile ul{
     position: absolute;
+    background: inherit;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -608,26 +606,57 @@ body{
     height: 70%;
     align-self: center;
     font-size: 30px;
+    gap: 30px;
 }
 
 .nav_mobile ul div{
-    margin: 30px 0;
+    background: inherit;
 }
 
-.nav_mobile ul div input{
-    border: none;
-    border-radius: 20px;
-    width: 230px;
+.nav_mobile ul .button{
+    width: 60px;
+    height: 30px;
+    border: 2px solid #fff;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.nav_mobile ul input{
+    width: 250px;
     height: 40px;
-    padding-left: 20px;
-    outline: none;
     background: #23d5ab;
-    transition: all 0.1s;
+    text-align: center;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    color: #333;
+    transition: 0.2s;
+    cursor: text;
 }
 
-.nav_mobile ul div input:hover{
-    background: #5A639C;
+.nav_mobile ul input:hover{
+    background: #23d5ab;
+    width: 260px;
+    height: 45px;
 }
+
+.block_mb.active{
+    transform: translateX(100%);
+}
+
+.nav_mobile ul .button .block_mb{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #5A639C;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
 
 
 /* -------------------------------------------------------responsive */
@@ -665,7 +694,6 @@ body{
     }
     .row .father .text .column .tag{
         display: flex;
-        color: black;
         justify-content: center;
     }
     .place .text{
@@ -704,3 +732,12 @@ body{
 
 
 /* ----------------------------------------------------------------------dark mode */
+
+.mode.darkMode{
+    background: #333;
+    color: #f2f5f6;
+}
+
+.father .title.darkMode{
+    color: #fff;
+}
