@@ -213,6 +213,7 @@ body{
     margin-top: 70px;
     padding-bottom: 400px;
     background: #434979;
+    transition: all 1s ease;
 }
 
 .warrper .content{
@@ -312,7 +313,8 @@ body{
     padding-bottom: 30vh;
     padding-top: 50px;
     opacity: 0;
-    transition: 2s ease;
+    transition: all 1s ease;
+    min-height: 100vh;
 }
 
 .father.show{
@@ -654,9 +656,6 @@ body{
     background: #5A639C;
     transition: transform 0.2s ease-in-out;
 }
-
-
-
 
 
 /* -------------------------------------------------------responsive */
